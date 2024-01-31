@@ -15,20 +15,6 @@ class Program
         Run();
     }
 
-    // This is a method that returns a random prompt for the user to write a response
-    public string GetPrompt()
-    {
-        // TODO: Implement the logic to generate a random prompt
-        List<Prompt> prompts = new List<Prompt>();
-        prompts.Add("Who was the most interesting person I interacted with today?");
-        prompts.Add("What was the best part of my day?");
-        prompts.Add("How did I see the hand of the Lord in my life today?");
-        prompts.Add("What was the strongest emotion I felt today?");
-        prompts.Add("If I had one thing I could do over today, what would it be?");
-
-        return "";
-    }
-
     // This is a method that runs the program logic
     public void Run()
     {
@@ -82,4 +68,19 @@ class Program
     {
         // TODO: Implement the logic to load the journal entries from a file
     }
+
+    // This is a method that returns a random prompt for the user to write a response
+    public string GetPrompt()
+    {
+        // TODO: Implement the logic to generate a random prompt
+        List<Prompt> prompts = new List<Prompt>();
+        prompts.Add("Who was the most interesting person I interacted with today?");
+        prompts.Add("What was the best part of my day?");
+        prompts.Add("How did I see the hand of the Lord in my life today?");
+        prompts.Add("What was the strongest emotion I felt today?");
+        prompts.Add("If I had one thing I could do over today, what would it be?");
+
+        return "";
+    }
+
 }
