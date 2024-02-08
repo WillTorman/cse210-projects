@@ -22,7 +22,7 @@ public class Fraction
         _top = top;
         _bottom = bottom;
     }
-
+    // push
     public GetTop()
     {
 
