@@ -6,4 +6,8 @@ class Program
     {
 
     }
+
+    Scripture.Display();
+
+    // user input (quit/continue)
 }
