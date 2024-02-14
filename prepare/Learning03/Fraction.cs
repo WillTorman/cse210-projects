@@ -1,4 +1,4 @@
-using System.Diagnostics;
+using System;
 
 public class Fraction
 {
@@ -14,7 +14,7 @@ public class Fraction
     public Fraction(int wholeNumber)
     {
         _top = wholeNumber;
-        _bottom = 1
+        _bottom = 1;
     }
 
     public Fraction(int top, int bottom)
@@ -22,34 +22,15 @@ public class Fraction
         _top = top;
         _bottom = bottom;
     }
-    // push
-    public GetTop()
-    {
-
-    }
-
-    public SetTop(top)
-    {
-
-    }
-
-    public GetBottom()
-    {
-
-    }
-
-    public void SetBottom(bottom)
-    {
-        _bottom = ;
-    }
 
     public string GetFractionString()
     {
-        Console.WriteLine($"{top}/{bottom}");
+        string text = ($"{_top}/{_bottom}");
+        return text;
     }
 
     public double GetDecimalValue()
     {
-
+        return (double)_top / (double)_bottom;
     }
 }
