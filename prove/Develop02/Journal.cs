@@ -1,3 +1,4 @@
+using System.IO;
 // This is a class that represents a journal with a list of entries
 public class Journal
 {
@@ -36,19 +37,36 @@ public class Journal
     }
 
     // This is a method that exports the journal entries as a string
-    public string Export()
+    public void ExportJournal()
     {
-        // Create a string builder to store the output
-        StringBuilder sb = new StringBuilder();
+        string filename = "myFile.txt";
 
-        // Loop through the entries list
-        foreach (Entry entry in entries)
+        using (StreamWriter outputFile = new StreamWriter(filename))
         {
-            // Append the entry details to the string builder
-            sb.AppendLine(entry.ToString());
+            foreach (Entry entry in entries)
+            {
+                outputFile.WriteLine($"{entry.date}|{entry.prompt}|{entry.response}");
+            }
         }
+    }
 
-        // Return the string representation of the journal
-        return sb.ToString();
+
+    // get user input as to what they want
+    public void ImportJournal()
+    {
+        string filename = "myFile.txt";
+        string[] lines = System.IO.File.ReadAllLines(filename);
+
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split("|");
+
+            string date = parts[0];
+            string prompt = parts[1];
+            string response = parts[2];
+
+            Entry newEntry = new Entry(date, prompt, response);
+            entries.Add(newEntry);
+        }
     }
 }

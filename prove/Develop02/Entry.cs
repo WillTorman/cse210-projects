@@ -8,11 +8,12 @@ public class Entry
     public string date;
 
     // This is a constructor that creates an entry from a response and a prompt
-    public Entry(string response, string prompt)
+    public Entry(string response, string prompt, string date)
     {
         // Assign the response and the prompt to the fields
         this.response = response;
         this.prompt = prompt;
+        this.date = date;
     }
 
     // This is a constructor that creates an entry from a string
