@@ -25,7 +25,7 @@ public class Entry
     // This is a method that displays the entry details on the console
     public void Display()
     {
-
+        Console.WriteLine($"");
     }
 
     // This is a method that exports the entry details as a string

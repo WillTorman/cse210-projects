@@ -13,9 +13,11 @@ public class Scripture
 
     private List<string> words = new List<string>();
 
-    public void display()
+    public void Display()
     {
+        // use a for each
         // display each word
+        Word.Display();
     }
 
     public Scripture()

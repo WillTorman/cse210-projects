@@ -51,6 +51,8 @@ class Program
             else if (selection == 3)
             {
                 // load journal
+                journal.ImportJournal();
+                Console.WriteLine("Loading journal...");
             }
             else if (selection == 4)
             {
@@ -61,9 +63,6 @@ class Program
             {
                 keepGoing = false;
             }
-
-
-
         } while (keepGoing);
     }
 

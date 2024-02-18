@@ -6,7 +6,7 @@ public class Word
 
     private bool hidden;
 
-    public void display()
+    public void Display()
     {
 
     }

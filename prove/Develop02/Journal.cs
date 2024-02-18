@@ -51,7 +51,7 @@ public class Journal
     }
 
 
-    // get user input as to what they want
+    // This is a method that imports the journal entries.
     public void ImportJournal()
     {
         string filename = "myFile.txt";
