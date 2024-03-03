@@ -31,6 +31,8 @@ public class Scripture
         Console.WriteLine();
     }
 
+
+    // More help from Copilot
     public void HideRandomWords()
     {
         for (int i = 0; i < 3; i++)
