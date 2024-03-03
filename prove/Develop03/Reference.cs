@@ -1,22 +1,18 @@
-using System.ComponentModel.DataAnnotations;
-
 public class Reference
 {
-    public Reference(string Book, string Chapter, string Verse)
-    {
-        string _book = Book;
-        string _chapter = Chapter;
-        string _verse = Verse;
+    private string book;
+    private string chapter;
+    private string verse;
+    
+    public Reference(string book, string chapter, string verse){
+        this.book = book;
+        this.chapter = chapter;
+        this.verse = verse;
     }
 
-    private string Book;
-
-    private string Chapter;
-
-    private string Verse;
 
     public void Display()
     {
-        Console.WriteLine($"{Book} {Chapter}:{Verse}");
+        Console.WriteLine($"{book} {chapter}:{verse}");
     }
 }

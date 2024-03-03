@@ -1,23 +1,33 @@
-using System.ComponentModel.DataAnnotations;
-
 public class Word
 {
-    private string word;
+    private string text;
+    private bool isHidden;
 
-    private bool hidden;
+    public Word(string text, bool isHidden)
+    {
+        this.text = text;
+        this.isHidden = isHidden;
+    }
 
     public void Display()
     {
-
+        if (this.isHidden)
+        {
+            Console.Write("____ ");
+        }
+        else
+        {
+            Console.Write(this.text + " ");
+        }
     }
 
-    public GetHidden()
+    public bool GetHidden()
     {
-
+        return isHidden;
     }
 
-    public SetHidden()
+    public void SetHidden(bool isHidden)
     {
-
+        this.isHidden = isHidden;
     }
 }
