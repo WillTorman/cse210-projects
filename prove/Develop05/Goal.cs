@@ -3,13 +3,15 @@ using System.IO;
 public class Goal
 {
     protected string _goalName;
-    protected string _Description;
-    protected int _pointsAwarded;
+    protected string _description;
+    protected int _points;
 
 
-    public Goal()
+    public Goal(string goalName, string description, int points)
     {
-
+        this._goalName = goalName;
+        this._description = description;
+        this._points = points;
     }
 
     public virtual void Load()
@@ -45,7 +47,7 @@ public class Goal
 
     public virtual void Display()
     {
-
+        Console.WriteLine($"{goalName}: {description}");
     }
 
     public virtual void RecordEvent()
