@@ -11,6 +11,6 @@ class Square : Shape
 
     public override double GetArea()
     {
-        return base.GetArea() + _side * _side;
+        return _side * _side;
     }
 }
