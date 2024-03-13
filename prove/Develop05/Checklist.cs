@@ -1,14 +1,14 @@
 public class Checklist : Goal
 {
-    public override void Load()
-    {
+    // public override void Load()
+    // {
 
-    }
+    // }
 
-    public override void Save()
-    {
+    // public override void Save()
+    // {
 
-    }
+    // }
 
     public override void Display()
     {
