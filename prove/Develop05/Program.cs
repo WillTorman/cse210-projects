@@ -14,7 +14,7 @@ class Program
             // Menu
             Console.WriteLine($"\nYou have {points} points.\n");
             Console.WriteLine($"Menu Options:\n    1. Create New Goal\n    2. List Goals\n    3. Save Goals\n    4. Load Goals\n    5. Record Event\n    6. Quit");
-            Console.WriteLine("Select a choice from the menu: ");
+            Console.WriteLine("Select a choice from the menu:");
             int answer = int.Parse(Console.ReadLine());
 
             // Create new goal
@@ -49,9 +49,14 @@ class Program
             {
                 Console.WriteLine("The goals are: ");
                 // For loop to display all entries in list
-                for (int i = 0; i < goals.Count; i++) 
+                for (int i = 0; i < goals.Count; i++)
                 {
                     goals[i].Display(i + 1); // Pass the index (i + 1 because indices start at 0) to the Display method
+
+                    if (goals[i] is Checklist checklist)
+                    {
+                        Console.Write(checklist.GetCurrentProgress());
+                    }
                 }
             }
             // Save goals to file
@@ -67,7 +72,7 @@ class Program
             // Record/check event
             else if (answer == 5)
             {
-                
+
             }
             // Exit program
             else

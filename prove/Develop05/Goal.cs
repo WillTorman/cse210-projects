@@ -23,7 +23,7 @@ public class Goal
     public virtual void Display(int index)
     {
         // ? uses boolean logic to determine whether box is crossed or not
-        char checkbox = _isCompleted ? 'X' : ' '; 
+        char checkbox = _isCompleted ? 'X' : ' ';
         Console.WriteLine($"{index}. [{checkbox}] {_goalName}: {_description}");
     }
 
