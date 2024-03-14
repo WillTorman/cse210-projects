@@ -1,5 +1,9 @@
 public class Eternal : Goal
 {
+    public Eternal() : base()
+    {
+
+    }
     // public override void Load()
     // {
 
@@ -10,10 +14,10 @@ public class Eternal : Goal
 
     // }
 
-    public override void Display()
-    {
+    // public override void Display()
+    // {
 
-    }
+    // }
 
     public override void RecordEvent()
     {

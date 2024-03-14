@@ -5,10 +5,11 @@ public class Goal
     protected string _goalName;
     protected string _description;
     protected int _points;
-
+    protected bool _isCompleted;
 
     public Goal()
     {
+        _isCompleted = false;
         Console.WriteLine("What is the name of your goal?");
         _goalName = Console.ReadLine();
 
@@ -19,9 +20,11 @@ public class Goal
         _points = int.Parse(Console.ReadLine());
     }
 
-    public virtual void Display()
+    public virtual void Display(int index)
     {
-        Console.WriteLine($"{_goalName}: {_description}");
+        // ? uses boolean logic to determine whether box is crossed or not
+        char checkbox = _isCompleted ? 'X' : ' '; 
+        Console.WriteLine($"{index}. [{checkbox}] {_goalName}: {_description}");
     }
 
     public virtual void RecordEvent()

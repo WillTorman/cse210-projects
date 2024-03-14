@@ -1,5 +1,11 @@
 public class Checklist : Goal
 {
+    // Only this class uses bonus points. For this, it is public.
+    public int bonusPoints;
+    public Checklist() : base()
+    {
+
+    }
     // public override void Load()
     // {
 
@@ -10,10 +16,10 @@ public class Checklist : Goal
 
     // }
 
-    public override void Display()
-    {
+    // public override void Display()
+    // {
 
-    }
+    // }
 
     public override void RecordEvent()
     {

@@ -14,11 +14,6 @@ public class Simple : Goal
 
     // }
 
-    public override void Display()
-    {
-
-    }
-
     public override void RecordEvent()
     {
 
