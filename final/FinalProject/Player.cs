@@ -1,4 +1,4 @@
-class Character
+class Player
 {
     private string _uname;
     private int _tHealth;
@@ -6,7 +6,7 @@ class Character
     private int _attack;
     private int _defense;
 
-    public Character(string uname, int tHealth, int cHealth, int attack, int defense)
+    public Player(string uname, int tHealth, int cHealth, int attack, int defense)
     {
         this._uname = uname;
         this._tHealth = tHealth;
