@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Character character = new Character("Will", 20, 20, 5, 3);
     }
 }
