@@ -1,16 +1,16 @@
 class Player
 {
-    private string _uname;
+    //private string _uname;
     private int _tHealth;
     private int _cHealth;
     private int _attack;
     private int _defense;
 
-    public Player(string uname, int tHealth, int cHealth, int attack, int defense)
+    public Player(int tHealth, int attack, int defense)
     {
-        this._uname = uname;
+        //this._uname = uname;
         this._tHealth = tHealth;
-        this._cHealth = cHealth;
+        this._cHealth = tHealth;
         this._attack = attack;
         this._defense = defense;
     }
@@ -19,4 +19,6 @@ class Player
     // {
     //     Console.WriteLine($"{uname}");
     // }
+
+
 }
