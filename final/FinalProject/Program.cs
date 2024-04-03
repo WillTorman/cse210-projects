@@ -6,6 +6,7 @@ class Program
     {
         Console.WriteLine("What would you like to name your character? ");
         string uName = Console.ReadLine();
+        // Declare a new player variable??
 
         // Menu & Intro
         Console.Clear();
@@ -39,5 +40,7 @@ class Program
         {
             Console.WriteLine("Thanks for playing!");
         }
+
+        while (_cHealth > 0 && enemyHp > 0)
     }
 }
