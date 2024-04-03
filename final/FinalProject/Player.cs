@@ -14,11 +14,4 @@ class Player
         this._attack = attack;
         this._defense = defense;
     }
-
-    // public void Display()
-    // {
-    //     Console.WriteLine($"{uname}");
-    // }
-
-
 }

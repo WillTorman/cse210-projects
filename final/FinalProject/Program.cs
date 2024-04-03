@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("What would you like to name your character? ");
         string uName = Console.ReadLine();
-        // Declare a new player variable??
+        Player player;
 
         // Menu & Intro
         Console.Clear();
@@ -23,7 +23,7 @@ class Program
         // Create new goal
         if (choice == 1)
         {
-            Wizard wizard = new Wizard();
+            player = new Wizard();
         }
 
         else if (choice == 2)
@@ -41,6 +41,6 @@ class Program
             Console.WriteLine("Thanks for playing!");
         }
 
-        while (_cHealth > 0 && enemyHp > 0)
+        //while (_cHealth > 0 && enemyHp > 0);
     }
 }
