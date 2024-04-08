@@ -14,4 +14,20 @@ class Player
         this._attack = attack;
         this._defense = defense;
     }
+
+    // Getter for Current Health
+    public int GetCurrentHealth()
+    {
+        return _cHealth;
+    }
+
+    // Setter for Current Health
+    public void SetCurrentHealth(int hp)
+    {
+        _cHealth = hp;
+    }
+
+    public void DislayHp(){
+        Console.WriteLine($"HP: {_cHealth} / {_tHealth}");
+    }
 }

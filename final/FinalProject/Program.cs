@@ -6,7 +6,9 @@ class Program
     {
         Console.WriteLine("What would you like to name your character? ");
         string uName = Console.ReadLine();
-        Player player;
+        Player player = null;
+        // Enemy enemy;
+        Quest quest = new Quest();
 
         // Menu & Intro
         Console.Clear();
@@ -20,7 +22,7 @@ class Program
         Console.WriteLine("Select a faction from the menu:");
         int choice = int.Parse(Console.ReadLine());
 
-        // Create new goal
+        // Player faction input
         if (choice == 1)
         {
             player = new Wizard();
@@ -28,19 +30,33 @@ class Program
 
         else if (choice == 2)
         {
-            //Warrior warrior = new Warrior();
+            //player = new Warrior();
         }
 
         else if (choice == 3)
         {
-            //Marksman marksman = new Marksman();
+            //player = new Assassin();
         }
-        // Exit program
         else
         {
             Console.WriteLine("Thanks for playing!");
+            return; // Exit program if the player chooses to quit
         }
 
-        //while (_cHealth > 0 && enemyHp > 0);
+        // Check if player 
+        while (player.GetCurrentHealth() > 0)
+        {
+            string randomQuest = quest.GetRandomQuest();
+            Console.WriteLine(randomQuest);
+            // Display players HP
+            player.DislayHp();
+
+            // Game logic goes here...
+
+            if (player.GetCurrentHealth() <= 0)
+            {
+                Console.WriteLine("GAME OVER!");
+            }
+        }
     }
 }

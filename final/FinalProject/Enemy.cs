@@ -11,4 +11,22 @@ class Enemy
         this._attack = attack;
         this._defense = defense;
     }
+
+    // Getter for Enemy's Health
+    public int GetEnemyHealth()
+    {
+        return _enemyHp;
+    }
+
+    // Setter for Enemy's Health
+    public void SetEnemyHealth(int hp)
+    {
+        _enemyHp = hp;
+    }
+
+    // Method to display Enemy's Health
+    public void DisplayEnemyHp()
+    {
+        Console.WriteLine($"Enemy HP: {_enemyHp}");
+    }
 }
