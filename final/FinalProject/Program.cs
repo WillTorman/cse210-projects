@@ -43,7 +43,7 @@ class Program
             return; // Exit program if the player chooses to quit
         }
 
-        // Check if player 
+        // Check if player is alive
         while (player.GetCurrentHealth() > 0)
         {
             string randomQuest = quest.GetRandomQuest();
@@ -52,6 +52,7 @@ class Program
             player.DislayHp();
 
             // Game logic goes here...
+            Console.ReadKey();
 
             if (player.GetCurrentHealth() <= 0)
             {
