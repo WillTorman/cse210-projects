@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<string> quests = new List<string> { "It takes you four hours to hike a mountain. You got hurt along the way and lose -2 HEALTH; however, at the top is a dragon egg. You eat it and gain +5 HEALTH (+3 total)", "A goblin army sent a scout to find you. He intends to fight, because you have spotted him. Will you 1. FIGHT or 2. RUN? [Input #]" };
-        
         Console.WriteLine("What would you like to name your character? ");
         string uName = Console.ReadLine();
         Player player = null;
@@ -32,12 +30,12 @@ class Program
 
         else if (choice == 2)
         {
-            //player = new Warrior();
+            player = new Warrior();
         }
 
         else if (choice == 3)
         {
-            //player = new Assassin();
+            player = new Assassin();
         }
         else
         {
@@ -51,9 +49,8 @@ class Program
             player.DislayHp();
             string randomQuest = quest.GetRandomQuest();
             Console.WriteLine(randomQuest);
-            // Display players HP
 
-            // Game logic goes here...
+            // Game logic and story
             Console.WriteLine("You are a brave warrior in the kingdom of Zork. You are standing in front of the castle gate. The evil dragon has captured the princess.");
             Console.Write("Do you FIGHT the dragon or CALL for help? ");
             string actOne = Console.ReadLine().ToLower();
@@ -104,7 +101,7 @@ class Program
             {
                 Console.WriteLine("GAME OVER: THAT WAS NOT AN OPTION");
             }
-    
+
 
             if (player.GetCurrentHealth() <= 0)
             {
