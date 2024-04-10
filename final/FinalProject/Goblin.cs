@@ -4,4 +4,9 @@ class Goblin : Enemy
     {
 
     }
+
+    public override void DisplayEnemyHp()
+    {
+        Console.WriteLine($"Goblin HP: {_enemyHp}");
+    }
 }

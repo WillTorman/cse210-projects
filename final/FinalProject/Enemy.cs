@@ -1,7 +1,7 @@
 class Enemy
 {
 
-    private int _enemyHp;
+    protected int _enemyHp;
     private int _attack;
     private int _defense;
 
@@ -25,7 +25,7 @@ class Enemy
     }
 
     // Method to display Enemy's Health
-    public void DisplayEnemyHp()
+    public virtual void DisplayEnemyHp()
     {
         Console.WriteLine($"Enemy HP: {_enemyHp}");
     }

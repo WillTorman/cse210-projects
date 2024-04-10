@@ -47,8 +47,8 @@ class Program
         while (player.GetCurrentHealth() > 0)
         {
             player.DislayHp();
-            string randomQuest = quest.GetRandomQuest();
-            Console.WriteLine(randomQuest);
+            // string randomQuest = quest.GetRandomQuest();
+            // Console.WriteLine(randomQuest);
 
             // Game logic and story
             Console.WriteLine("You are a brave warrior in the kingdom of Zork. You are standing in front of the castle gate. The evil dragon has captured the princess.");
